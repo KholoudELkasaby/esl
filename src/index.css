@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
+
+
+
+
+*{
+  @apply transition-colors duration-200
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.coda-regular {
+    font-family: "Coda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .coda-extrabold {
+    font-family: "Coda", system-ui;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+
+@keyframes fade-out{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}  
+@keyframes fade-up{
+  0%{
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}  
+
+@keyframes fade-left{
+  0%{
+    opacity: 0;
+    transform: translateX(-30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}  
+
+@keyframes fade-right{
+  0%{
+    opacity: 0;
+    transform: translateX(30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}  
+  
+  
+.intro{
+  animation: fade-out 0.9s;
+}
+
+.back{
+  animation: fade-up 0.9s;
+}
+
+.left{
+  animation: fade-left 0.9s;
+}
+
+.right{
+  animation:  fade-right 0.9s;
+}
+
+.left-two{
+  animation: fade-left 1.5s;
+}
+
+
+@keyframes fade-left-footer{
+  0%{
+    opacity: 0;
+    transform: translateX(-1300px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}  
+
+.left-footer{
+  animation: fade-left-footer 2s;
+}
