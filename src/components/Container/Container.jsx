@@ -7,10 +7,8 @@ import CameraApp from "../Camera/Camera";
 function Container() {
     return (
     <div className="  ">
-     {/* <div className="Camera">  */}
      <CameraApp />  
-     {/* </div> */}
-     {/* <TextArea /> */}
+    
      
     </div>
 );
