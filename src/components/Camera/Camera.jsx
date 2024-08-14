@@ -68,7 +68,7 @@ function CameraApp() {
       const formData = new FormData();
       formData.append("frame", blob);
 
-      fetch("http://localhost:5000/detect", {
+      fetch("APIKEY", {
         method: "POST",
         body: formData,
       })
